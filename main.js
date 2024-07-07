@@ -6,6 +6,8 @@ var pname= document.getElementById("prodName");
 var pcat= document.getElementById("prodCat");
 var pprice= document.getElementById("prodPrice");
 var pdesc= document.getElementById("prodDesc");
+var btn= document.getElementById("bt1");
+var i;
 function handle(){
     if(products && products.length !== 0){
         console.log("Products are available");
@@ -48,48 +50,43 @@ function handle(){
 handle();
 
 function addproduct(){
-    if (pname.value ==="" || pcat.value ===""||pprice.value===""||pdesc.value==="") {
-        alert("Please fill out all required fields before adding a product.");
-        return; 
-    }
-    if (!products) {
+    if(btn.innerHTML==="add product")
+    {
+        if (pname.value ==="" || pcat.value ===""||pprice.value===""||pdesc.value==="") {
+            alert("Please fill out all required fields before adding a product.");
+            return; 
+        }
+        if (!products) {
         products = [];
+        }
+        var product = {
+            name: pname.value,
+            cat: pcat.value,
+            price: Number(pprice.value),
+            dec: pdesc.value,
+        };
+        products.push(product);
     }
-    var product = {
-        name: pname.value,
-        cat: pcat.value,
-        price: pprice.value,
-        dec: pdesc.value,
-    };
-    products.push(product);
+    else{
+        products[i].name=pname.value;
+        products[i].cat=pcat.value;
+        products[i].price=pprice.value;
+        products[i].dec=pdesc.value;
+        btn.innerHTML="add product";
+    }
     clearboxes();
     handle();
 }
 
 function updaterow(index){
     console.log("updaterow");
-    var choice =Number(prompt(`enter your choice\n1-product name\n2-product category\n3-product price\n4-product descriptison`));
-    switch(choice){
-        case 1:
-            var name=prompt("enter product name");
-            products[index].name=name;
-            break;
-        case 2:
-            var cat=prompt("enter product catogory");
-            products[index].cat=cat;
-            break;
-        case 3:
-            var price=prompt("enter product price");
-            products[index].price=price;
-            break;
-        case 4:
-            var desc=prompt("enter product description");
-            products[index].dec=desc;
-            break;
-        default:
-            break;
-    }
+    pname.value=products[index].name;
+    pcat.value=products[index].cat;
+    pdesc.value=products[index].dec;
+    pprice.value=products[index].price;
+    btn.innerHTML="update";
     console.log("Element updated successfully:", products);
+    i=index;
     handle();
 }
 function deleterow(index){
