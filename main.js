@@ -50,12 +50,12 @@ function handle(){
 handle();
 
 function addproduct(){
+    if (pname.value ==="" || pcat.value ===""||pprice.value===""||pdesc.value==="") {
+        alert("Please fill out all required fields before adding a product.");
+        return; 
+    }
     if(btn.innerHTML==="add product")
     {
-        if (pname.value ==="" || pcat.value ===""||pprice.value===""||pdesc.value==="") {
-            alert("Please fill out all required fields before adding a product.");
-            return; 
-        }
         if (!products) {
         products = [];
         }
