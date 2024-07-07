@@ -1,6 +1,6 @@
 # CRUD System with JavaScript and Bootstrap
 
-This project demonstrates a basic CRUD (Create, Read, Update, Delete) system implemented using JavaScript and Bootstrap CSS. It allows you to manage user data through a web interface.
+This project demonstrates a basic CRUD (Create, Read, Update, Delete) system implemented using JavaScript and Bootstrap CSS. It allows you to manage products data through a web interface.
 
 ## Getting Started
 
