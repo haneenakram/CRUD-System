@@ -19,7 +19,7 @@ This project demonstrates a basic CRUD (Create, Read, Update, Delete) system imp
 
 ## GitHub Page
 
-You can access the live version of this CRUD system on the GitHub Pages link: [Your GitHub Pages URL](https://haneenakram.github.io/CRUD-System/)
+You can access the live version of this CRUD system on the GitHub Pages link: [CRUD-System](https://haneenakram.github.io/CRUD-System/)
 
 ## Credits
 
