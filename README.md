@@ -1,4 +1,4 @@
-# CRUD System with JavaScript and Bootstrap
+# DEPI internship assignment CRUD System with JavaScript and Bootstrap
 
 This project demonstrates a basic CRUD (Create, Read, Update, Delete) system implemented using JavaScript and Bootstrap CSS. It allows you to manage products data through a web interface.
 
@@ -19,7 +19,7 @@ This project demonstrates a basic CRUD (Create, Read, Update, Delete) system imp
 
 ## GitHub Page
 
-You can access the live version of this CRUD system on the GitHub Pages link: [CRUD-System](https://haneenakram.github.io/CRUD-System/)
+You can access the live version of this CRUD system on the GitHub Pages link: [CRUD-System](https://haneenakram.github.io/DEPI_React_CRUD_System/)
 
 ## Credits
 
